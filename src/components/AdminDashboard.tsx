@@ -386,7 +386,7 @@ export function AdminDashboard() {
         </div>
         
         <div className="mt-4 text-sm text-gray-600">
-          Showing {filteredRecords.length} of {records.length} records
+          Showing {filteredRecordsCache.length || getFilteredRecords().length} of {records.length} records
         </div>
       </div>
 
