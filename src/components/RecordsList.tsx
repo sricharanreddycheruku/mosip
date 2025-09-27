@@ -25,11 +25,8 @@ export function RecordsList() {
   useEffect(() => {
     loadRecords();
     
-    // Set default filter to pending for field agents
-    const userType = AuthService.getUserType();
-    if (userType === 'field-agent') {
-      setFilterStatus('pending');
-    }
+    // Set default filter to pending for all users and default language to English
+    setFilterStatus('pending');
     
     // Listen for sync events
     const handleSyncComplete = () => {
