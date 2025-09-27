@@ -1,0 +1,2 @@
+Child Health Record API server running on port 3001
+Health check: http://localhost:3001/api/health
