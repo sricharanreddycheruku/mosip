@@ -42,23 +42,27 @@ export class PDFService {
 
     // Add photo if available
     try {
-      if (record.facePhoto) {
+      if (record.facePhoto && record.facePhoto.trim() !== '') {
+        // Handle both base64 and regular URLs
+        const imageSource = record.facePhoto.startsWith('data:') ? record.facePhoto : record.facePhoto;
+        
         const imgProps = await new Promise<{ width: number; height: number }>((res, rej) => {
           const img = new Image();
           img.onload = () => res({ width: img.width, height: img.height });
           img.onerror = rej;
-          img.src = record.facePhoto;
+          img.src = imageSource;
         });
         
         const maxWidth = 120;
         const ratio = imgProps.width / imgProps.height;
         const imgW = Math.min(maxWidth, imgProps.width);
         const imgH = imgW / ratio;
-        pdf.addImage(record.facePhoto, 'JPEG', margin, y, imgW, imgH);
+        pdf.addImage(imageSource, 'JPEG', margin, y, imgW, imgH);
         y += imgH + 30;
       }
     } catch (e) {
       console.warn('Failed to add image to PDF', e);
+      // Continue without image if it fails
     }
 
     // Single column data presentation in English only
