@@ -15,7 +15,7 @@ i18n
       te: { translation: te },
       kn: { translation: kn },
     },
-    lng: localStorage.getItem('appLanguage') || 'en', // default language (persisted)
+    lng: 'en', // default language always English
     fallbackLng: 'en',
     interpolation: { escapeValue: false },
   });
