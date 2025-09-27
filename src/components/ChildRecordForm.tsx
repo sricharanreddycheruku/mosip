@@ -258,7 +258,6 @@ export function ChildRecordForm({ onSaved }: ChildRecordFormProps) {
               type="text"
               id="childName"
               autoComplete="off"
-              autoComplete="off"
               value={formData.childName}
               onChange={(e) => setFormData({ ...formData, childName: e.target.value })}
               className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
