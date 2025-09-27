@@ -231,15 +231,27 @@ class DatabaseService {
       getRequest.onsuccess = () => {
         const record = getRequest.result;
         if (record) {
-          record.isUploaded = true;
-          record.updatedAt = new Date();
+          // First decrypt the data if it's encrypted
+          const decryptedRecord = {
+            ...record,
+            childName: this.decrypt(record.childName),
+            parentGuardianName: this.decrypt(record.parentGuardianName),
+            facePhoto: this.decrypt(record.facePhoto),
+          };
+          
+          // Update the fields
+          decryptedRecord.isUploaded = true;
+          decryptedRecord.updatedAt = new Date();
           
           // Re-encrypt the data when updating
-          record.childName = this.encrypt(record.childName);
-          record.parentGuardianName = this.encrypt(record.parentGuardianName);
-          record.facePhoto = this.encrypt(record.facePhoto);
+          const encryptedRecord = {
+            ...decryptedRecord,
+            childName: this.encrypt(decryptedRecord.childName),
+            parentGuardianName: this.encrypt(decryptedRecord.parentGuardianName),
+            facePhoto: this.encrypt(decryptedRecord.facePhoto),
+          };
           
-          const putRequest = store.put(record);
+          const putRequest = store.put(encryptedRecord);
           putRequest.onsuccess = () => resolve();
           putRequest.onerror = () => reject(putRequest.error);
         } else {
