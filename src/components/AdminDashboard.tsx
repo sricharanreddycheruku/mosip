@@ -135,9 +135,9 @@ export function AdminDashboard() {
     return filtered;
   };
 
-  // Get filtered data for charts
+  // Get filtered data for charts using cached filtered records
   const getFilteredDataForCharts = () => {
-    const filteredRecords = getFilteredRecords();
+    const filteredRecords = filteredRecordsCache.length > 0 ? filteredRecordsCache : getFilteredRecords();
     
     let normalCases = 0, moderateCases = 0, severeCases = 0;
     filteredRecords.forEach(record => {
