@@ -23,6 +23,7 @@ export function AdminDashboard() {
   const [statusFilter, setStatusFilter] = useState('all');
   const [nationalIdFilter, setNationalIdFilter] = useState('');
   const [fieldAgents, setFieldAgents] = useState<any[]>([]);
+  const [filteredRecordsCache, setFilteredRecordsCache] = useState<ChildRecord[]>([]);
 
   useEffect(() => {
     loadDashboardData();
