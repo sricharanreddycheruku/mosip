@@ -22,7 +22,7 @@ export function ChildRecordForm({ onSaved }: ChildRecordFormProps) {
     visibleSignsMalnutrition: '',
     recentIllnesses: '',
     parentalConsent: false,
-    language: (localStorage.getItem('appLanguage') || 'en') as 'en' | 'hi' | 'te' | 'kn',
+    language: 'en' as 'en' | 'hi' | 'te' | 'kn',
   });
   const [facePhoto, setFacePhoto] = useState<string>('');
   const [location, setLocation] = useState<GeolocationCoordinates | null>(null);
