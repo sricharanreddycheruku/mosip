@@ -30,6 +30,12 @@ export function AdminDashboard() {
     loadFieldAgents();
   }, []);
 
+  // Update filtered records cache when filters change
+  useEffect(() => {
+    const filtered = getFilteredRecords();
+    setFilteredRecordsCache(filtered);
+  }, [dateFilter, statusFilter, nationalIdFilter, records]);
+
   const loadFieldAgents = async () => {
     try {
       // In a real implementation, this would fetch from API
