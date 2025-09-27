@@ -27,6 +27,10 @@ function App() {
   useEffect(() => {
     const initializeApp = async () => {
       try {
+        // Set default language to English for everyone
+        i18n.changeLanguage('en');
+        localStorage.setItem('appLanguage', 'en');
+        
         await db.init();
         SyncService.init();
         
