@@ -230,7 +230,7 @@ export function AdminDashboard() {
     };
   });
 
-  const filteredRecords = getFilteredRecords();
+  const filteredRecords = filteredRecordsCache.length > 0 ? filteredRecordsCache : getFilteredRecords();
   const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent }: any) => {
     const RADIAN = Math.PI / 180;
     const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
