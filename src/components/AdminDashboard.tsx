@@ -361,19 +361,14 @@ export function AdminDashboard() {
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">Field Agent ID</label>
-            <select
+            <label className="block text-sm font-medium text-gray-700 mb-1">Search by National ID</label>
+            <input
+              type="text"
               value={nationalIdFilter}
               onChange={(e) => setNationalIdFilter(e.target.value)}
+              placeholder="Enter field agent national ID..."
               className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500"
-            >
-              <option value="">All Field Agents</option>
-              {fieldAgents.map(agent => (
-                <option key={agent.id} value={agent.id}>
-                  {agent.name} ({agent.recordCount} records)
-                </option>
-              ))}
-            </select>
+            />
           </div>
 
           <div className="flex items-end">
