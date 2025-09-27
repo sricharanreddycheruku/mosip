@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "server": "node src/server/api.js",
+    "server": "node src/server/api.cjs",
     "dev:full": "concurrently \"npm run server\" \"npm run dev\""
   },
   "dependencies": {
