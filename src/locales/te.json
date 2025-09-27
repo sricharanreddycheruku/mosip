@@ -17,7 +17,6 @@
   "searchAndDownload": "శోధించండి & డౌన్లోడ్",
   "nutritionalStatusDistribution": "పోషణ స్థితి పంపిణీ",
   "childrenByAgeGroup": "వయస్సు వర్గాల వారీగా పిల్లలు",
-  "regionalStatistics": "ప్రాంతీయ గణాంకాలు",
   "recentRecords": "సమీప కాలపు రికార్డులు",
   "noRecordsFound": "రికార్డులు కనబడలేదు",
   "noRecordsHelp": "మొదటి ఆరోగ్య రికార్డు సృష్టించడం ద్వారా మొదలుపెట్టండి",
@@ -82,7 +81,6 @@
   "statusGood": "సరైనది",
   "statusModerate": "మధ్యస్థం",
   "statusHighRisk": "అధిక ప్రమాదం",
-  "regionColumn": "ప్రాంతం",
   "totalChildrenColumn": "మొత్తం పిల్లలు",
   "malnutritionRateColumn": "పోషణ రేటు",
   "actions": "చర్యలు",
@@ -108,5 +106,8 @@
   "nutritionalStatus": "పోషణ స్థితి:",
   "coordinates": "కోఆర్డినేట్లు:",
   "obtained": "పొందబడింది",
-  "locationCaptured": "స్థానం నమోదు చేయబడింది"
+  "locationCaptured": "స్థానం నమోదు చేయబడింది",
+  "viewDetails": "వివరాలు చూడండి",
+  "close": "మూసివేయండి",
+  "malnutritionStatus": "పోషణ స్థితి"
 }

@@ -17,7 +17,6 @@
   "searchAndDownload": "ಹುಡುಕಿ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ",
   "nutritionalStatusDistribution": "ಪೋಷಣಾ ಸ್ಥಿತಿ ವಿತರಣೆ",
   "childrenByAgeGroup": "ವಯೋ ಗುಂಪುಗಳ ಪ್ರಕಾರ ಮಕ್ಕಳು",
-  "regionalStatistics": "ಪ್ರಾದೇಶಿಕ ಸಾಂಖ್ಯಿಕಗಳು",
   "recentRecords": "ಸಮೀಪದ ದಾಖಲೆಗಳು",
   "noRecordsFound": "ದಾಖಲೆಗಳು ಕಂಡುಬಂದಿಲ್ಲ",
   "noRecordsHelp": "ನಿಮ್ಮ ಮೊದಲ ಮಕ್ಕಳ ಆರೋಗ್ಯ ದಾಖಲೆಯನ್ನು ರಚಿಸಿ ಪ್ರಾರಂಭಿಸಿ",
@@ -82,7 +81,6 @@
   "statusGood": "ಚೆನ್ನಾಗಿದೆ",
   "statusModerate": "ಮಧ್ಯಮ",
   "statusHighRisk": "ಅತ್ಯಧಿಕ ಅಪಾಯ",
-  "regionColumn": "ಪ್ರದೇಶ",
   "totalChildrenColumn": "ಒಟ್ಟು ಮಕ್ಕಳು",
   "malnutritionRateColumn": "ಪೋಷಣಾ ದರ",
   "actions": "ಕಾರ್ಯಗಳು",
@@ -108,5 +106,8 @@
   "nutritionalStatus": "ಪೋಷಣಾ ಸ್ಥಿತಿ:",
   "coordinates": "ನಿರ್ದೇಶಾಂಕಗಳು:",
   "obtained": "ಪಡೆಯಲಾಗಿದೆ",
-  "locationCaptured": "ಸ್ಥಳ ಸೆರೆಹಿಡಿಯಲಾಗಿದೆ"
+  "locationCaptured": "ಸ್ಥಳ ಸೆರೆಹಿಡಿಯಲಾಗಿದೆ",
+  "viewDetails": "ವಿವರಗಳನ್ನು ನೋಡಿ",
+  "close": "ಮುಚ್ಚಿ",
+  "malnutritionStatus": "ಪೋಷಣ ಸ್ಥಿತಿ"
 }

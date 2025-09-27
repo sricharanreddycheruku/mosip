@@ -17,7 +17,6 @@
   "searchAndDownload": "खोजें और डाउनलोड करें",
   "nutritionalStatusDistribution": "पोषण स्थिति वितरण",
   "childrenByAgeGroup": "आयु समूह के अनुसार बच्चे",
-  "regionalStatistics": "क्षेत्रीय आँकड़े",
   "recentRecords": "हाल के रिकॉर्ड",
   "noRecordsFound": "कोई रिकॉर्ड नहीं मिला",
   "noRecordsHelp": "पहला स्वास्थ्य रिकॉर्ड बनाकर शुरू करें",
@@ -82,7 +81,6 @@
   "statusGood": "अच्छा",
   "statusModerate": "मध्यम",
   "statusHighRisk": "उच्च जोखिम",
-  "regionColumn": "क्षेत्र",
   "totalChildrenColumn": "कुल बच्चे",
   "malnutritionRateColumn": "कुपोषण दर",
   "actions": "क्रियाएँ",
@@ -108,5 +106,8 @@
   "nutritionalStatus": "पोषण स्थिति:",
   "coordinates": "निर्देशांक:",
   "obtained": "प्राप्त",
-  "locationCaptured": "स्थान कैप्चर किया गया"
+  "locationCaptured": "स्थान कैप्चर किया गया",
+  "viewDetails": "विवरण देखें",
+  "close": "बंद करें",
+  "malnutritionStatus": "कुपोषण स्थिति"
 }
