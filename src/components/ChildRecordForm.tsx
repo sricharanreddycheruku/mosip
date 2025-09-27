@@ -373,6 +373,7 @@ export function ChildRecordForm({ onSaved }: ChildRecordFormProps) {
           <input
             type="text"
             id="parentGuardianName"
+            autoComplete="off"
             value={formData.parentGuardianName}
             onChange={(e) => setFormData({ ...formData, parentGuardianName: e.target.value })}
             className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
