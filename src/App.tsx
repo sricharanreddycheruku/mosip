@@ -79,10 +79,14 @@ function App() {
   };
 
   const handleBackToLanding = () => {
+    // Clear authentication state but keep the ability to go back
     setIsAuthenticated(false);
     setCurrentUser(null);
     setUserType(null);
     setShowAdminLogin(false);
+    // Clear localStorage but preserve user data for potential re-login
+    localStorage.removeItem('authToken');
+    localStorage.removeItem('userType');
   };
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
