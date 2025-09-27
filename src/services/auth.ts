@@ -55,7 +55,6 @@ export class AuthService {
         name: 'System Administrator',
         email: 'admin@health.org',
         phone: '+1234567890',
-        region: 'All Regions',
         isAuthenticated: true,
       };
       

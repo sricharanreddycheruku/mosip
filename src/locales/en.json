@@ -17,7 +17,6 @@
   "searchAndDownload": "Search & Download",
   "nutritionalStatusDistribution": "Nutritional Status Distribution",
   "childrenByAgeGroup": "Children by Age Group",
-  "regionalStatistics": "Regional Statistics",
   "recentRecords": "Recent Records",
   "noRecordsFound": "No records found",
   "noRecordsHelp": "Start by creating your first child health record",
@@ -82,7 +81,6 @@
   "statusGood": "Good",
   "statusModerate": "Moderate",
   "statusHighRisk": "High Risk",
-  "regionColumn": "Region",
   "totalChildrenColumn": "Total Children",
   "malnutritionRateColumn": "Malnutrition Rate",
   "actions": "Actions",
@@ -108,5 +106,8 @@
   "nutritionalStatus": "Nutritional Status:",
   "coordinates": "Coordinates:",
   "obtained": "Obtained",
-  "locationCaptured": "Location captured"
+  "locationCaptured": "Location captured",
+  "viewDetails": "View Details",
+  "close": "Close",
+  "malnutritionStatus": "Malnutrition Status"
 }
